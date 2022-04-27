@@ -1,3 +1,5 @@
+[![build and test](https://github.com/wgibbons1/devops-challenge-dotnet/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/wgibbons1/devops-challenge-dotnet/actions/workflows/build-and-test.yml)
+
 # DevOps Challenge (.NET)
 
 ## Introduction :wave:
