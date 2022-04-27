@@ -16,6 +16,7 @@ namespace DevOpsChallenge.SalesApi.Controllers
     /// Controller for sale operations.
     /// </summary>
     [Route("api/sales")]
+    [ApiController]
     public class SalesController : Controller
     {
         /// <summary>
