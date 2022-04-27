@@ -4,7 +4,7 @@ namespace DevOpsChallenge.SalesApi.Business.Exceptions
 {
     public static class SaleExceptions
     {
-        public abstract class SaleException : Exception
+        public abstract class SaleException : ApplicationException
         {
         }
 
