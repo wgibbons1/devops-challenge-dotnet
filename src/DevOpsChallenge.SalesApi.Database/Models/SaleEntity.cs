@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace DevOpsChallenge.SalesApi.Database.Models
 {
     /// <summary>
     /// A sale entity. Used to record sales which can be reported on.
     /// </summary>
+    [Index(nameof(TransactionId))]
     public class SaleEntity
     {
         /// <summary>
