@@ -10,6 +10,7 @@ on:
 
 env:
   DOTNET_VERSION: '5.0.301' # The .NET SDK version to use
+  SALES_API_ENDPOINT: 'https://localhost:52271'
 
 jobs:
   build-and-test:
@@ -33,5 +34,8 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     
+    - name: Run
+      run: dotnet run --project "src\DevOpsChallenge.SalesApi" --launch-profile "DevOpsChallenge.SalesApi"
+
     - name: Test
       run: dotnet test --no-restore --verbosity normal
