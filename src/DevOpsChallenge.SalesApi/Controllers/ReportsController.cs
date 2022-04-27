@@ -15,7 +15,7 @@ namespace DevOpsChallenge.SalesApi.Controllers
     /// </summary>
     [Route("api/reports")]
     [ApiController]
-    public class ReportsController : Controller
+    public class ReportsController : ControllerBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ReportsController"/> class.
