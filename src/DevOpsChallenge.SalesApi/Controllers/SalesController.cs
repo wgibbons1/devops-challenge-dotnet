@@ -16,7 +16,8 @@ namespace DevOpsChallenge.SalesApi.Controllers
     /// Controller for sale operations.
     /// </summary>
     [Route("api/sales")]
-    public class SalesController : Controller
+    [ApiController]
+    public class SalesController : ControllerBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="SalesController"/> class.

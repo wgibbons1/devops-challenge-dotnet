@@ -14,7 +14,8 @@ namespace DevOpsChallenge.SalesApi.Controllers
     /// Controller for reports.
     /// </summary>
     [Route("api/reports")]
-    public class ReportsController : Controller
+    [ApiController]
+    public class ReportsController : ControllerBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ReportsController"/> class.
@@ -44,6 +45,16 @@ namespace DevOpsChallenge.SalesApi.Controllers
         /// * DateRangeMustNoMoreThanAYear: The difference between the "to" and "from" date cannot be more than a year.
         /// </response>
         /// <returns>A HTTP response.</returns>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     GET /Todo
+        ///     {
+        ///        "from": 2022-01-01,
+        ///        "to": 2022-01-31
+        ///     }
+        ///
+        /// </remarks>
         [HttpGet("daily-sales")]
         [Produces(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(SalesReportDto), StatusCodes.Status200OK)]
