@@ -45,6 +45,16 @@ namespace DevOpsChallenge.SalesApi.Controllers
         /// * DateRangeMustNoMoreThanAYear: The difference between the "to" and "from" date cannot be more than a year.
         /// </response>
         /// <returns>A HTTP response.</returns>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     GET /Todo
+        ///     {
+        ///        "from": 2022-01-01,
+        ///        "to": 2022-01-31
+        ///     }
+        ///
+        /// </remarks>
         [HttpGet("daily-sales")]
         [Produces(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(SalesReportDto), StatusCodes.Status200OK)]

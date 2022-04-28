@@ -76,7 +76,19 @@ namespace DevOpsChallenge.SalesApi
             services.AddSwaggerGen(c =>
             {
                 // Information
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "sales-api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Description = "DevOps Challenge (.NET) API information",
+                    Title = "sales-api", 
+                    Version = "v1",
+                    Contact = new OpenApiContact {
+                        Name = "Example Contact",
+                        Url = new Uri("https://example.com/contact")
+                    },
+                    License = new OpenApiLicense {
+                        Name = "Example License",
+                        Url = new Uri("https://example.com/license")
+                    }
+                });
 
                 // Comments
                 string xmlCommentsFilePath = Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml");
