@@ -7,6 +7,7 @@ namespace DevOpsChallenge.SalesApi.Database.Models
     /// A sale entity. Used to record sales which can be reported on.
     /// </summary>
     [Index(nameof(TransactionId))]
+    [Index(nameof(Date))]
     public class SaleEntity
     {
         /// <summary>
