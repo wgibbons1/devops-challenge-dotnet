@@ -48,7 +48,7 @@ namespace DevOpsChallenge.SalesApi.Controllers
         /// <remarks>
         /// Sample request:
         ///
-        ///     GET /Todo
+        ///     GET /api/reports/daily-sales
         ///     {
         ///        "from": 2022-01-01,
         ///        "to": 2022-01-31
